@@ -7,6 +7,7 @@
       <% if current_user %>
           <li><%= link_to "Settings", edit_user_registration_path %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Requests", requests_path %></li>
       <% else %>
           <li><%= link_to "Login", new_user_session_path %></li>
           <li><%= link_to "About", about_path %></li>
