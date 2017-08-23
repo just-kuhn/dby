@@ -1,10 +1,11 @@
 class RequestsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_request, only: [:show, :edit, :update, :destroy]
 
   # GET /requests
   # GET /requests.json
   def index
-    @requests = Request.all
+    @requests = current_user.requests
   end
 
   # GET /requests/1
@@ -24,7 +25,7 @@ class RequestsController < ApplicationController
   # POST /requests
   # POST /requests.json
   def create
-    @request = Request.new(request_params)
+    @request = current_user.requests.new(request_params)
 
     respond_to do |format|
       if @request.save
