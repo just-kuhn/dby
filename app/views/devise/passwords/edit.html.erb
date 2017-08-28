@@ -1,5 +1,5 @@
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: "form-signin" }) do |f| %>
-    <h2 class="text-center">Change your password</h2>
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: "form-signin margintop" }) do |f| %>
+    <h2 class="text-center whtxt">Change your password</h2>
 
     <%= f.error_notification %>
 
@@ -9,7 +9,7 @@
     <%= f.input :password, required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), label: false, placeholder: "New password", input_html: {class: "form-control"} %>
     <%= f.input :password_confirmation, required: true, label: false, placeholder: "Confirm my password", input_html: {class: "form-control"} %>
 
-    <%= f.button :submit, "Change my password", class: "btn btn-primary btn-block" %>
+    <%= f.button :submit, "Change my password", class: "btn btn-info btn-block" %>
 
     <%= render "devise/shared/links" %>
 <% end %>

@@ -1,14 +1,30 @@
-<%= simple_form_for(@request, html: {class: "form-signin"}) do |f| %>
-    <h1 class="text-center">New Request</h1>
-
-    <%= f.error_notification %>
+<h1 class="text-center whbgtxt">DavaiBuy</h1>
+<%= simple_form_for(@request, html: {class: "margintop marginleft"}) do |f| %>
 
 
-    <%= f.input :content, label: false, placeholder: "Я хочу...", input_html: {class: "form-control"} %>
+    <div class="container">
 
-    <%= f.button :submit, class: "btn btn-primary btn-block" %>
 
-    <%= link_to 'Back', requests_path, class: "btn btn-primary btn-block" %>
+      <div class="row">
+        <div class="col-md-6">
+          <%= f.error_notification %>
+
+          <%= f.input :content, label: false, placeholder: "Я хочу...", input_html: {class: "form-control"}%>
+        </div>
+        <div class="col-md-5">
+          <select class="form-control">
+            <option>Выберите категорию</option>
+            <option value="Авто">Авто</option>
+            <option value="Туризм">Туризм</option>
+            <option value="Мебель">Мебель</option>
+          </select>
+        </div>
+        <!-- Запрещает блокам, которые расположены после него, обтекать его. -->
+        <div class="clearfix"></div>
+        <div class="col-md-11">
+          <%= f.button :submit, value: "Давай!", class: "btn-lg btn-info btn-block" %>
+        </div>
+      </div>
+    </div>
+
 <% end %>
-
-

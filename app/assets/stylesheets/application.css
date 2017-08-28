@@ -347,6 +347,18 @@ header {
 }
 
 .margintop {
-    margin-top: 15%;
-    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.marginleft {
+    margin-left: 6%;
+}
+
+.whbgtxt {
+    font-size: 600%;
+    color: #fffcf8;
+}
+
+.whtxt {
+    color: #fffcf8;
 }
