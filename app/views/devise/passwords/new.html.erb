@@ -1,12 +1,12 @@
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: "form-signin margintop" }) do |f| %>
 
-    <h2 class="text-center whtxt">Forgot your password?</h2>
+    <h2 class="text-center whtxt">Забыли пароль?</h2>
 
     <%= f.error_notification %>
 
     <%= f.input :email, required: true, autofocus: true, label: false, placeholder: "Email", input_html: {class: "form-control"} %>
 
-    <%= f.button :submit, "Send instructions", class: "btn btn-info btn-block" %>
+    <%= f.button :submit, "Отправить инструкции", class: "btn btn-info btn-block" %>
     <%= render "devise/shared/links" %>
 <% end %>
 
