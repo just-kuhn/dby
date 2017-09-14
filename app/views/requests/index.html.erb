@@ -1,6 +1,10 @@
+<body>
+<div class="container">
+  <div class="row">
+
 <p id="notice"><%= notice %></p>
 
-<h1 class="whtxt">Requests</h1>
+<h1 class="text-center whbgtxt bigmarginbottom">Заявки</h1>
 
 <table>
   <thead>
@@ -11,16 +15,25 @@
 
   <tbody>
     <% @requests.each do |request| %>
-      <tr>
-        <td class="whtxt"><%= request.content %></td>
-        <td><%= link_to 'Show', request, class: "btn btn-info btn-block" %></td>
-        <td><%= link_to 'Edit', edit_request_path(request), class: "btn btn-info btn-block" %></td>
-        <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-info btn-block" %></td>
-      </tr>
+  <div class="bigmarginbottom">
+      <div class="col-md-3 col-sm-3 col-xs-5 bigmarginbottom request-control reqmargin" readonly>
+        <%=request.content %>
+        <div class="clearfix"></div>
+        <%= link_to 'Редактировать', edit_request_path(request), class: "btn-sm btn-info showreq" %>
+        <%= link_to 'Удалить', request, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-sm btn-info deletereq" %>
+      </div>
+
+        <!--<%= link_to 'Показать', request, class: "btn-sm btn-info marginright marginleft" %>-->
+        <!--<%= link_to 'Удалить', request, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-sm btn-info" %>-->
+  </div>
     <% end %>
   </tbody>
 </table>
 
-<br>
+    <div class="clearfix"></div>
 
-<%= link_to 'New Request', new_request_path, class: "btn btn-info" %>
+<%= link_to 'Создать заявку', new_request_path, class: "btn-lg btn-info btn-block text-center marginbottom" %>
+
+</div>
+</div>
+</body>

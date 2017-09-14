@@ -18,7 +18,7 @@ body {
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%;
+    background-size: 11000px;
 }
 
 html { overflow-x: hidden; }
@@ -203,8 +203,16 @@ body {
     margin-top: 10%;
 }
 
+.smallmargintop {
+    margin-top: 4%;
+}
+
 .marginbottom {
     margin-bottom: 3%;
+}
+
+.bigmarginbottom {
+    margin-bottom: 6%;
 }
 
 .marginleft {
@@ -213,6 +221,15 @@ body {
 
 .bigmarginleft {
     margin-left: 27%;
+}
+
+.marginright {
+    margin-right: 1%;
+}
+
+.reqmargin {
+    margin-right: 4.1%;
+    margin-left: 4.1%;
 }
 
 .whbgtxt {
