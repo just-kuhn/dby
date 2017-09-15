@@ -60,3 +60,5 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'rails_admin', '~> 1.2'
+
+gem 'mailboxer', github: 'mailboxer/mailboxer'

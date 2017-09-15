@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Все беседы</h1>
+
+<% @conversations.each do |conversation| %>
+<div>
+  <%= link_to conversation.subject, conversation_path(conversation) %>
+</div>
+<% end %>
+</div>
+
+<%= link_to 'Новая беседа', new_conversation_path %>

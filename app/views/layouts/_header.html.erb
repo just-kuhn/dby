@@ -5,6 +5,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
+          <li><%= link_to "Личные сообщения", conversations_path %></li>
           <li><%= link_to "Настройки профиля", edit_user_registration_path %></li>
           <li><%= link_to "Заявки", requests_path %></li>
           <li><%= link_to "Выход", destroy_user_session_path, method: :delete %></li>

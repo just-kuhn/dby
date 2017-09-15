@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :categories
   resources :requests
+  resources :conversations do
+    resources :messages
+  end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root 'pages#home'
