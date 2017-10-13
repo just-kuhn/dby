@@ -52,6 +52,24 @@
   position: relative;
 }
 
+.conversations-control {
+  padding-top: 0.3%;
+  font-size: 27px;
+  max-height: 47px;
+  height: 47px;
+  margin: 0 auto;
+  background: ghostwhite;
+  border-radius: 15px;
+  padding-right: 6%;
+  overflow-x:hidden;
+  position: relative;
+}
+
+.newconvbtn-control {
+  min-width: 200px;
+  width: 200px;
+}
+
 .showreq {
   position: absolute;
   bottom: 3%;
@@ -62,4 +80,11 @@
   position: absolute;
   bottom: 3%;
   right: 10%;
+}
+
+hr {
+  border: none; /* Убираем границу */
+  background-color: #fffcf8; /* Цвет линии */
+  color: #fffcf8; /* Цвет линии для IE6-7 */
+  height: 2px; /* Толщина линии */
 }

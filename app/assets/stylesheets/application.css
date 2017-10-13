@@ -198,6 +198,15 @@ body {
     margin: 0
 }
 
+.iconposition {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+
+.bigmargintop {
+    margin-top: 500%;
+}
 
 .margintop {
     margin-top: 10%;
@@ -205,6 +214,22 @@ body {
 
 .smallmargintop {
     margin-top: 4%;
+}
+
+.convmargintop {
+    margin-top: 20%;
+}
+
+.convmarginbottom {
+    margin-bottom: 7%;
+}
+
+.smallconvmarginbottom {
+    margin-bottom: 1.7%;
+}
+
+.smallmarginbottom {
+    margin-bottom: 1%;
 }
 
 .marginbottom {

@@ -1,11 +1,15 @@
 <div class="container">
-<h1>Все беседы</h1>
+  <div class="row">
+<h1 class="text-center whbgtxt convmarginbottom">Все беседы</h1>
+
 
 <% @conversations.each do |conversation| %>
-<div>
+<div class="col-md-11 col-sm-11 col-xs-11 smallconvmarginbottom conversations-control reqmargin">
   <%= link_to conversation.subject, conversation_path(conversation) %>
+  <a href="#"><span class="glyphicon glyphicon-trash iconposition"></span></a>
 </div>
 <% end %>
+  <div class="clearfix"></div>
+<%= link_to 'Новая беседа', new_conversation_path, class: "btn-lg btn-info btn-block text-center marginbottom margintop" %>
+  </div>
 </div>
-
-<%= link_to 'Новая беседа', new_conversation_path %>
